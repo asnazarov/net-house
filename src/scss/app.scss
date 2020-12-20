@@ -1,0 +1,56 @@
+@import 'fonts';
+@import 'variables';
+@import 'libs/normalize';
+
+@import 'components/all';
+
+body {
+  background-color: $background;
+  padding: 50px 0;
+}
+
+.wrapper {
+  width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+  max-width: 1400px;
+  @media screen and (max-width: 600px) {
+    width: calc(100vw - 20px);
+  }
+}
+
+.content {
+  padding: 40px 0;
+
+  &__title {
+    margin: 35px 0;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+
+  &--card {
+    max-width: 820px;
+    margin: 90px auto;
+
+  }
+}
+
+
